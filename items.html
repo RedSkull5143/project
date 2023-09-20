@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'>
+    <link rel="stylesheet" href="./items.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type='text/javascript' src=''></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src=''></script>
+</head>
+
+</head>
+
+<body>
+    <form action="">
+        <div class="maincontainer">
+            <div class="nav">
+                <div class="logodiv">
+                    <img src="aa.jpg" alt="" class="pic">
+                    <h2 class="title">VISION-VERSE</h2>
+                </div>
+            </div>
+
+            <div class="boxdiv">
+                <div class="inven">
+                    <h3>Inventory</h3>
+                    <img src="add.png" class="add" alt="Add Image">
+                </div>
+                <div class="box1">
+                    <label>ID : </label><br>
+                    <label>Item Name : </label><br>
+                    <div class="options">
+                        <button type="button" href="#exampleModal" class="btnn-a" data-toggle="modal"
+                            data-target="#exampleModal" onclick="modalshow()">
+                            DELETE</button>
+                        <button type="submit" class="btnn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <label>ID : </label><br>
+                    <label>Item Name : </label><br>
+                    <div class="options">
+                        <button type="button" href="#exampleModal" class="btnn-a" data-toggle="modal"
+                            data-target="#exampleModal" onclick="modalshow()">
+                            DELETE</button>
+                        <button type="submit" class="btnn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <label>ID : </label><br>
+                    <label>Item Name : </label><br>
+                    <div class="options">
+                        <button type="button" href="#exampleModal" class="btnn-a" data-toggle="modal"
+                            data-target="#exampleModal" onclick="modalshow()">
+                            DELETE</button>
+                        <button type="submit" class="btnn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <label>ID : </label><br>
+                    <label>Item Name : </label><br>
+                    <div class="options">
+                        <button type="button" href="#exampleModal" class="btnn-a" data-toggle="modal"
+                            data-target="#exampleModal" onclick="modalshow()">
+                            DELETE</button>
+                        <button type="submit" class="btnn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="exampleModal">
+            <img src="x-icon-png-10.png" alt="" id="cancel">
+            <h2>Are You Sure?</h2>
+            <p>Do you really want to delete these records? This process cannot be undone</p>
+            <div class="btnbox">
+                <button id="can">Cancel</button>
+                <button id="sub">Delete</button>
+            </div>
+            <img src="close1437.jpg" alt="" class="close" onclick="modalclose()">
+        </div>
+        <a href="login.html">Login</a>
+    </form>
+
+    <script>
+        let modalbox = document.getElementById("exampleModal");
+        function modalshow() {
+            modalbox.style.display = "block";
+        }
+
+        function modalclose() {
+            modalbox.style.display = "none";
+        }
+    </script>
+
+
+</body>
+
+</html>
