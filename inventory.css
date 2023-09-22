@@ -63,17 +63,20 @@
     overflow: hidden;
     position: fixed;
     width: 75vw;
-    top: 50%;
-    left: 50%;
+    top: 150px;
+    /* left: 50%; */
+    right: -75%;
     visibility: hidden;
     transform: translate(-50%,-50%) scale(0);
-    transition: transform 0.4s bottom 0.4s;
-    transition: 1s;
+    transition: transform 0.2s right 0.2s;
+    transition:  0.5s;
 }
 
 .open-popup{
+    /* transition: transform 0.2s bottom 0.2s; */
     visibility: visible;
     top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%) scale(1);
 }
 .tbox {
@@ -230,5 +233,99 @@
     top: -8px;
     opacity: 0.8;
     right: -10px;
+}
+
+.boxbox{
+    background: #f1f7fe;
+    /* height: 80vh; */
+    height: auto;
+    /* width: 86vw; */
+    /* margin: 10px; */
+    border-radius: 20px;
+    
+    padding: 10px 10px;
+
+    background-color: rgb(210, 221, 222);
+    width: 75%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    /* text-align: center; */
+    border-radius: 10px;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+    transition: 1s;
+    /* block-size: fit-content; */
+}
+
+
+.name1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    height: 30px;
+    /* margin-bottom: 10px; */
+    font-size: 15px;
+}
+
+.imagebox{
+    /* background-color: white; */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#item-image{
+    padding: 20px 0;
+    height: 100px;
+    width: 100px;
+}
+
+.content{
+    /* margin-top: 10px; */
+    /* background-color: white; */
+    padding: 10px;
+}
+
+#star{
+    float: right;
+}
+.checked{
+    color: orange
+}
+
+#pricebox{
+    background-color: grey;
+    border-radius: 10px;
+    height: 25px;
+    width: auto;
+    padding: 5px 10px;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    top: 1px;
+
+}
+
+#edit{
+    float: right;
+    height: auto;
+    background-color: orange;
+    color: white;
+    width: 50%;
+    /* height: 35px; */
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    /* font-size: 15px; */
+    border-radius: 10px;
+    /* font-weight: 900; */
+    position: relative;
+    top: -5px;
 }
 
